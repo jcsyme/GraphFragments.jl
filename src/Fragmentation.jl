@@ -613,6 +613,8 @@ function try_parallel(
     parallel_approach::Symbol = :auto,
     vertex_threshold::Int64 = 100,
 )::Bool
+    # no need to do anything else if we don't have access to processes 
+    (nprocs() == 1) && (return false);
 
     valid_approaches = [:auto, :parallel, :serial]
     parallel_approach = !(parallel_approach in valid_approaches) ? :auto : parallel_approach

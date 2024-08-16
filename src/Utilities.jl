@@ -1,14 +1,19 @@
 """
-Select a GraphDistanceAlgorithm to use for iteration based on how it performs on 
-    a quick benchmark of fragmentation.
+Select a GraphDistanceAlgorithm to use for iteration based on how it performs on a quick benchmark of fragmentation.
 
     NOTE: If not using for iteration, dijkstra_quickheaps can outperform 
-    dijkstra_kary. Both tend to outperform the stock Graphs.jl implementation.
+    dijkstra_kary.
+
 
 # Constructs
 
 ```
-
+select_algorithm_from_benchmark_for_iteration(
+    graph::AbstractGraph;
+    algorithms_to_try::Union{Vector{Symbol}, Nothing} = nothing,
+    n_runs::Int64 = 10,
+    selection_metric::Symbol = :mean,
+)
 ```
 
 
