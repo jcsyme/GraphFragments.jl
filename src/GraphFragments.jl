@@ -15,8 +15,8 @@ using StatsBase
 
 
 # custom modules TEMPORARY
-using Pkg
-Pkg.develop(path = "/Users/jsyme/Documents/Projects/git_jbus/GraphDistanceAlgorithms.jl")
+#using Pkg
+#Pkg.develop(path = "/Users/jsyme/Documents/Projects/git_jbus/GraphDistanceAlgorithms.jl")
 using GraphDistanceAlgorithms
 
 
