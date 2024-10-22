@@ -9,7 +9,7 @@
 
 The fragmentation of the graph can be calculated using the `fragmentation` function. This function will automatically try to run in parallel if the keyword argument `parallel_approach = true` (default) is set; this can be fixed to run serially if desired or in parallel (if a script is setup to automatically run in parallel). 
 
-Fragmentation relies on the calculation of shortest paths across the graph from each starting node; if parallelized, the calculation will use synchronous data parallelization to distribute each source node on an available compute node. A dictionary of `DistributedArrays.DArray` objects for use by the distance algorithm can be passed using the `dict_arrays` argument, though the user should ensure these arrays match those necessary for the algorithm specificed by `distance_algorithm`. 
+Fragmentation relies on the calculation of shortest paths across the graph from each starting node; if parallelized, the calculation will use synchronous data parallelization to distribute each source node on an available compute node. A dictionary of `DistributedArrays.DArray` objects for use by the distance algorithm can be passed using the `dict_arrays` argument, though the user should ensure these arrays match those necessary for the algorithm specificed by `distance_algorithm`. These arrays can include intermediate algorithmic vectors as well as any applicable heap cache arrays.
 
 The user can access information about these arguments using the docstrings for `fragmentation` in Julia. 
 
