@@ -537,7 +537,7 @@ get_default_kpp_nodes(
 
 ##  Function Arguments
 
-- `graph_fast`: FastGraph object to tuse
+- `graph`: graph object to tuse
 - `n_nodes`: number of nodes to sample
 
 
