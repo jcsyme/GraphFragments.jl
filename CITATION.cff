@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: GraphFragments.jl
+message: Suggested Citation
+type: software
+authors:
+  - email: jsyme@rand.org
+    given-names: James
+    family-names: Syme
+    affiliation: RAND
+repository-code: >-
+  MISSING
+url: MISSING
+abstract: >-
+  Implement the Distance-based Fragmentation for Key Player Problem Negative
+  (KPP-Neg) metrics from Borgatti (2006). Inlcudes serial and parallel 
+  implementations, where the parallel implementation allows for distributed
+  computation of betweenness centralities across compute cores.
+license: MIT
